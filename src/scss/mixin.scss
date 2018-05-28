@@ -1,0 +1,24 @@
+//mixin
+// ============ start of media queries ==============
+// -Mobile first principle START-
+
+@mixin mobile {
+  @media (min-width: 420px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// -Mobile first principle END-
+// ============ end of media queries ==============

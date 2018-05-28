@@ -1,0 +1,125 @@
+html {
+  font-family: 'Roboto', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+.menu-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #333937; }
+  .menu-icon__line {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .menu-icon__line:before, .menu-icon__line:after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+    .menu-icon__line:before {
+      top: -10px; }
+    .menu-icon__line:after {
+      top: 10px; }
+  .menu-icon.active .menu-icon__line {
+    background: transparent; }
+    .menu-icon.active .menu-icon__line:before {
+      top: 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .menu-icon.active .menu-icon__line:after {
+      top: 0;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  min-width: 1600px; }
+
+.menu .menu__item li {
+  display: block;
+  padding: 36px 0;
+  font-size: 63px;
+  list-style-type: none; }
+  .menu .menu__item li a {
+    color: white;
+    text-transform: uppercase; }
+
+header {
+  background: url("/public/img/bg-wood.png");
+  background-size: 100% 100%; }
+  header .header-middle {
+    background: url("/public/img/background.png"); }
+
+.carousel {
+  height: 560px;
+  border: 1px solid blue; }
+
+.our_story {
+  height: 404px; }
+
+.watch_our_story {
+  height: 550px;
+  background: url("/public/img/city.png");
+  background-size: 100% 100%; }
+  .watch_our_story .bg {
+    background: url("/public/img/bg-city.png"); }
+
+.expertise {
+  height: 756px; }
+
+.amazing_team {
+  height: 714px;
+  background: url("/public/img/bg-wood2.png");
+  background-size: 100% 100%; }
+  .amazing_team .bg {
+    background: url("/public/img/background.png"); }
+
+.our_works {
+  height: 738px; }
+
+.comment {
+  height: 500px; }
+
+.contact {
+  height: 656px; }
+
+.footer {
+  height: 400px;
+  background: url("/public/img/footer.png");
+  background-size: 100% 100%; }
+  .footer .bg {
+    background: url("/public/bg footer.png"); }

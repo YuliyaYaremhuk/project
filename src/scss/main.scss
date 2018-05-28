@@ -1,0 +1,138 @@
+html{
+  font-family: 'Roboto', sans-serif;
+}
+@import "mixin";
+@import "variables";
+@import "reset";
+@import "fonts";
+
+.menu-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #333937;
+  //border-radius: 50%;
+  &__line{
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+    &:before, &:after{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      transition: 0.3s;
+    }
+    &:before{
+      top: -10px;
+    }
+    &:after{
+      top: 10px;
+    }
+  }
+  &.active &__line{
+      background: transparent;
+      &:before{
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after{
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  min-width: 1600px;
+}
+
+.menu {
+  .menu__item {
+    li {
+      display: block;
+      padding: 36px 0;
+      font-size: 63px;
+      list-style-type: none;
+      a {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+}
+
+header {
+  background: url("/public/img/bg-wood.png");
+  background-size: 100% 100%;
+  .header-middle {
+    background: url("/public/img/background.png");
+  }
+}
+
+
+.carousel {
+  height: 560px;
+  border: 1px solid blue;
+
+}
+.our_story {
+  height: 404px;
+}
+
+.watch_our_story {
+  height: 550px;
+  background: url("/public/img/city.png");
+  background-size: 100% 100%;
+  .bg {
+    background: url("/public/img/bg-city.png");
+  }
+}
+
+
+.expertise {
+  height: 756px;
+}
+
+.amazing_team {
+  height: 714px;
+  background: url("/public/img/bg-wood2.png");
+  background-size: 100% 100%;
+  .bg {
+    background: url("/public/img/background.png");
+  }
+}
+
+.our_works {
+  height: 738px;
+}
+
+.comment {
+  height: 500px;
+}
+
+.contact{
+  height: 656px;
+}
+
+.footer {
+  height: 400px;
+  background: url("/public/img/footer.png");
+  background-size: 100% 100%;
+  .bg {
+    background: url("/public/bg footer.png");
+  }
+}
